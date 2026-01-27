@@ -15,3 +15,7 @@ Modern alignment pipelines (e.g., RLHF, RLAIF) rely heavily on high-quality rewa
 
 We evaluate MARS on multiple widely used alignment benchmarks and show consistent gains in reward modeling accuracy and policy alignment.
 
+## Codes
+
+This GitHub repository consists of the generic code used for training the reward models, alignment and evaluation.
+
