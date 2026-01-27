@@ -4,8 +4,6 @@
 
 This repository contains the full codebase for training reward models, aligning policies, and evaluating alignment quality across multiple preference datasets.
 
----
-
 ## Overview
 
 Modern alignment pipelines (e.g., RLHF, RLAIF) rely heavily on high-quality reward models trained from pairwise human preferences. However, existing data augmentation methods typically expand datasets uniformly, ignoring where the reward model struggles most.
