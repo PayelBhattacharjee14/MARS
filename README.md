@@ -1,6 +1,6 @@
 # MARS: Margin and Semantic-Aware Data Augmentation for Reward Modeling
 
-**MARS** is a margin- and semantic-aware data augmentation framework for reward modeling. Instead of uniformly expanding preference datasets, MARS uses the reward model's current margins to identify uncertain or mis-ranked preference pairs and concentrates synthetic augmentation on those examples. It further uses semantic-distance analysis to decide whether selected chosen--rejected pairs should be directly augmented or first refined to preserve a clear preference signal.
+**MARS** is a margin and semantic-aware data augmentation framework for reward modeling. Instead of uniformly expanding preference datasets, MARS uses the reward model's current margins to identify uncertain or mis-ranked preference pairs and concentrates synthetic augmentation on those examples. It further uses semantic-distance analysis to decide whether selected chosen--rejected pairs should be directly augmented or first refined to preserve a clear preference signal.
 
 This repository contains the codebase for reward model training, semantic-distance analysis, preference augmentation, policy alignment, and evaluation across multiple preference datasets and alignment benchmarks.
 
