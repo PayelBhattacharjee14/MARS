@@ -43,6 +43,7 @@ Across these settings, MARS improves reward-model quality on RewardBench and lea
 
 The repository is organized around the main stages of the \texttt{MARS} pipeline:
 
+```text
 .
 ├── LICENSE
 ├── README.md
@@ -52,7 +53,7 @@ The repository is organized around the main stages of the \texttt{MARS} pipeline
 ├── alignment.ipynb
 └── alignment_evaluation.ipynb
 
-
+```
 ## Code
 
 The repository includes the full experimental pipeline used in the paper, including scripts for:
