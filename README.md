@@ -50,26 +50,6 @@ This repository contains generic code for:
 - evaluating reward models and aligned policies on RewardBench and AlpacaEval;
 - producing qualitative completions and analysis plots.
 
-## Main Idea
-
-Given a preference tuple  
-\[
-z_i = (x_i, y_i^+, y_i^-),
-\]
-MARS computes the reward margin
-
-\[
-\Delta_\theta(z_i) = r_\theta(x_i, y_i^+) - r_\theta(x_i, y_i^-).
-\]
-
-Low or negative margins indicate examples where the reward model is uncertain or misranks the chosen and rejected responses. MARS assigns augmentation probability
-
-\[
-q_i \propto \exp(-\tau \Delta_\theta(z_i)),
-\]
-
-so that more synthetic supervision is allocated to harder examples. Semantic-distance analysis then determines whether the selected pair should be augmented directly or refined before augmentation.
-
 ## Code
 
 The repository includes the full experimental pipeline used in the paper, including scripts for:
