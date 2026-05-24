@@ -41,14 +41,17 @@ Across these settings, MARS improves reward-model quality on RewardBench and lea
 
 ## Repository Structure
 
-This repository contains generic code for:
+The repository is organized around the main stages of the \texttt{MARS} pipeline:
 
-- training baseline and MARS-based reward models;
-- computing reward margins and semantic distances;
-- generating semantic-aware rewritten and paraphrased preference data;
-- aligning policy models using trained reward models;
-- evaluating reward models and aligned policies on RewardBench and AlpacaEval;
-- producing qualitative completions and analysis plots.
+```text
+.
+├── LICENSE
+├── README.md
+├── semantic_and_paraphrasing.ipynb
+├── RM_training.ipynb
+├── RM_evaluation.ipynb
+├── alignment.ipynb
+└── alignment_evaluation.ipynb
 
 ## Code
 
