@@ -1,6 +1,6 @@
 # MARS: Margin and Semantic-Aware Data Augmentation for Reward Modeling
 
-**MARS** is a margin and semantic-aware data augmentation framework for reward modeling. Instead of uniformly expanding preference datasets, MARS uses the reward model's current margins to identify uncertain or mis-ranked preference pairs and concentrates synthetic augmentation on those examples. It further uses semantic-distance analysis to decide whether selected chosen--rejected pairs should be directly augmented or first refined to preserve a clear preference signal.
+**MARS** is a margin and semantic-aware data augmentation framework for reward modeling. Instead of uniformly expanding preference datasets, MARS uses the reward model's current margins to identify uncertain or mis-ranked preference pairs and concentrates synthetic augmentation on those examples. It further uses semantic-distance analysis to decide whether selected chosen-rejected pairs should be directly augmented or first refined to preserve a clear preference signal.
 
 This repository contains the codebase for reward model training, semantic-distance analysis, preference augmentation, policy alignment, and evaluation across multiple preference datasets and alignment benchmarks.
 
@@ -11,7 +11,7 @@ Modern alignment pipelines such as RLHF, RLAIF, and PPO-based policy optimizatio
 MARS addresses this limitation through two coupled components:
 
 - **Margin-aware augmentation:** MARS computes reward margins for preference pairs and allocates more augmentation budget to low-margin or mis-ranked examples where the reward model needs stronger corrective supervision.
-- **Semantic-aware refinement:** MARS measures the semantic distance between chosen and rejected responses. Semantically well-separated pairs are augmented directly, while semantically close pairs are first rewritten to sharpen the chosen--rejected contrast before augmentation.
+- **Semantic-aware refinement:** MARS measures the semantic distance between chosen and rejected responses. Semantically well-separated pairs are augmented directly, while semantically close pairs are first rewritten to sharpen the chosen-rejected contrast before augmentation.
 
 By combining margin-based allocation with semantic refinement, MARS targets supervision where it is most informative while avoiding redundant synthetic variants with weak ranking signal.
 
